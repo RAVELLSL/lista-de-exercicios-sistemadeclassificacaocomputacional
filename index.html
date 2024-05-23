@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Caderno de Exercícios - Sistema de Classificação Computacional</title>
+<style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar {
+  width: 250px;
+  padding: 20px;
+  background-color: #343a40;
+  color: #fff;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.sidebar h2 {
+  margin-top: 0;
+  color: #fff;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.sidebar a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+}
+
+.sidebar a:hover {
+  text-decoration: underline;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+  text-align: justify;
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+}
+
+form {
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+h3 {
+  margin-top: 20px;
+  color: #333;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #343a40;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto;
+}
+
+button:hover {
+  background-color: #23272b;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.modal-content h2 {
+  margin-top: 0;
+}
+
+.modal-content ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.modal-content li {
+  margin-bottom: 5px;
+}
+
+.modal-content button {
+  padding: 8px 15px;
+  background-color: #343a40;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.modal-content button:hover {
+  background-color: #23272b;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .sidebar {
+    width: 100%;
+    max-width: none;
+    margin-bottom: 20px;
+  }
+
+  .main-content {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="main-content" id="main-content">
+    <h1>Sistema de Classificação Computacional</h1>
+    <form id="exercises-form">
+      <h3>1. Qual é a principal característica da computação quântica?</h3>
+      <label><input type="radio" name="q1" value="a"> A. Uso de bits clássicos</label>
+      <label><input type="radio" name="q1" value="b"> B. Uso de qubits</label>
+      <label><input type="radio" name="q1" value="c"> C. Uso de neurônios artificiais</label>
+      <label><input type="radio" name="q1" value="d"> D. Uso de luz para processar informações</label>
+      <label><input type="radio" name="q1" value="e"> E. Uso de biomoléculas</label>
+
+      <h3>2. O que diferencia a computação adiabática da computação clássica?</h3>
+      <label><input type="radio" name="q2" value="a"> A. Uso de transistores</label>
+      <label><input type="radio" name="q2" value="b"> B. Uso de portas lógicas quânticas</label>
+      <label><input type="radio" name="q2" value="c"> C. Uso de um sistema que evolui lentamente para encontrar soluções</label>
+      <label><input type="radio" name="q2" value="d"> D. Uso de luz para transmitir dados</label>
+      <label><input type="radio" name="q2" value="e"> E. Uso de redes neurais artificiais</label>
+
+      <h3>3. Qual das seguintes opções é uma característica da computação fotônica?</h3>
+      <label><input type="radio" name="q3" value="a"> A. Uso de qubits</label>
+      <label><input type="radio" name="q3" value="b"> B. Processamento de informações com luz</label>
+      <label><input type="radio" name="q3" value="c"> C. Uso de neurônios biológicos</label>
+      <label><input type="radio" name="q3" value="d"> D. Uso de portas lógicas digitais</label>
+      <label><input type="radio" name="q3" value="e"> E. Evolução adiabática</label>
+
+      <h3>4. O que caracteriza a computação neuromórfica?</h3>
+      <label><input type="radio" name="q4" value="a"> A. Uso de luz para processar informações</label>
+      <label><input type="radio" name="q4" value="b"> B. Simulação de redes neurais biológicas</label>
+      <label><input type="radio" name="q4" value="c"> C. Uso de qubits</label>
+      <label><input type="radio" name="q4" value="d"> D. Uso de biomoléculas</label>
+      <label><input type="radio" name="q4" value="e"> E. Processamento de informações com transistores</label>
+
+      <h3>5. Qual é uma aplicação comum de supercomputadores?</h3>
+      <label><input type="radio" name="q5" value="a"> A. Processamento de imagens médicas</label>
+      <label><input type="radio" name="q5" value="b"> B. Simulações climáticas</label>
+      <label><input type="radio" name="q5" value="c"> C. Jogos de computador</label>
+      <label><input type="radio" name="q5" value="d"> D. Automação residencial</label>
+      <label><input type="radio" name="q5" value="e"> E. Controle de tráfego aéreo</label>
+
+      <h3>6. Qual é a base da computação biológica?</h3>
+      <label><input type="radio" name="q6" value="a"> A. Transistores</label>
+      <label><input type="radio" name="q6" value="b"> B. Qubits</label>
+      <label><input type="radio" name="q6" value="c"> C. Biomoléculas</label>
+      <label><input type="radio" name="q6" value="d"> D. Luz</label>
+      <label><input type="radio" name="q6" value="e"> E. Redes neurais artificiais</label>
+
+      <h3>7. Qual é a principal característica da computação clássica?</h3>
+      <label><input type="radio" name="q7" value="a"> A. Uso de qubits</label>
+      <label><input type="radio" name="q7" value="b"> B. Uso de transistores e portas lógicas digitais</label>
+      <label><input type="radio" name="q7" value="c"> C. Simulação de redes neurais biológicas</label>
+      <label><input type="radio" name="q7" value="d"> D. Uso de luz para processar informações</label>
+      <label><input type="radio" name="q7" value="e"> E. Uso de biomoléculas</label>
+
+      <h3>8. Qual a principal vantagem da computação quântica em relação à computação clássica?</h3>
+      <label><input type="radio" name="q8" value="a"> A. Menor consumo de energia</label>
+      <label><input type="radio" name="q8" value="b"> B. Maior capacidade de processamento paralelo</label>
+      <label><input type="radio" name="q8" value="c"> C. Uso de luz para transmitir informações</label>
+      <label><input type="radio" name="q8" value="d"> D. Simulação de redes neurais biológicas</label>
+      <label><input type="radio" name="q8" value="e"> E. Evolução adiabática</label>
+
+      <h3>9. Qual das seguintes afirmativas é verdadeira sobre a computação adiabática?</h3>
+      <label><input type="radio" name="q9" value="a"> A. Usa transistores clássicos</label>
+      <label><input type="radio" name="q9" value="b"> B. Requer altas temperaturas para operar</label>
+      <label><input type="radio" name="q9" value="c"> C. Evolui lentamente para encontrar soluções ótimas</label>
+      <label><input type="radio" name="q9" value="d"> D. Utiliza luz para processar informações</label>
+      <label><input type="radio" name="q9" value="e"> E. É baseada em redes neurais biológicas</label>
+
+      <h3>10. Qual é uma área emergente que utiliza conceitos da biologia para o processamento de informações?</h3>
+      <label><input type="radio" name="q10" value="a"> A. Computação Neuromórfica</label>
+      <label><input type="radio" name="q10" value="b"> B. Computação Fotônica</label>
+      <label><input type="radio" name="q10" value="c"> C. Computação Biológica</label>
+      <label><input type="radio" name="q10" value="d"> D. Computação Adiabática</label>
+      <label><input type="radio" name="q10" value="e"> E. Computação Clássica</label>
+    </form>
+    <button onclick="checkAnswers()">Enviar Respostas</button>
+  </div>
+</div>
+
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <h2>Sua Pontuação</h2>
+    <p id="score"></p>
+    <h3>Respostas Corretas</h3>
+    <ul id="correct-answers"></ul>    
+    <button onclick="closeModal()">Fechar</button>
+  </div>
+</div>
+
+<script>
+function checkAnswers() {
+  const correctAnswers = [
+    { answer: 'b', explanation: 'A computação quântica utiliza qubits, que podem representar simultaneamente 0 e 1 devido ao fenômeno da superposição quântica. Isso permite uma capacidade de processamento exponencialmente maior em comparação com bits clássicos.' },
+    { answer: 'c', explanation: 'A computação adiabática utiliza um sistema que evolui lentamente de um estado inicial para um estado final, mantendo o sistema em seu estado de menor energia possível, o que permite encontrar soluções ótimas para problemas complexos.' },
+    { answer: 'b', explanation: 'A computação fotônica utiliza luz (fótons) para processar e transmitir informações, o que pode resultar em velocidades mais rápidas e menor consumo de energia em comparação com a eletrônica tradicional.' },
+    { answer: 'b', explanation: 'A computação neuromórfica tenta replicar a estrutura e o funcionamento dos neurônios e sinapses do cérebro humano para criar sistemas de processamento mais eficientes e inteligentes.' },
+    { answer: 'b', explanation: 'Supercomputadores são frequentemente usados para simulações climáticas e modelagem de fenômenos naturais devido à sua capacidade de processar enormes volumes de dados e realizar cálculos complexos rapidamente.' },
+    { answer: 'c', explanation: 'A computação biológica utiliza moléculas biológicas, como DNA e proteínas, para realizar cálculos e armazenar informações, aproveitando as propriedades naturais dessas moléculas para processar dados de forma eficiente.' },
+    { answer: 'b', explanation: 'A computação clássica é baseada em transistores e portas lógicas digitais para processar e armazenar informações em bits, representando 0 ou 1 de forma binária.' },
+    { answer: 'b', explanation: 'A computação quântica tem uma capacidade de processamento paralelo muito maior devido à superposição e emaranhamento quântico, permitindo a resolução de certos problemas de forma muito mais rápida do que a computação clássica.' },
+    { answer: 'c', explanation: 'A computação adiabática envolve a evolução lenta de um sistema quântico para encontrar a solução ótima, mantendo o sistema em seu estado de menor energia durante o processo.' },
+    { answer: 'c', explanation: 'A computação biológica é uma área emergente que utiliza princípios e materiais biológicos, como DNA e proteínas, para o processamento de informações, explorando as capacidades naturais dessas moléculas para realizar cálculos complexos.' }
+  ];
+
+  let score = 0;
+  const studentAnswers = [];
+  for (let i = 1; i <= correctAnswers.length; i++) {
+    const selectedAnswer = document.querySelector(`input[name=q${i}]:checked`);
+    if (selectedAnswer) {
+      studentAnswers.push({ question: i, selected: selectedAnswer.value, correct: correctAnswers[i - 1].answer, explanation: correctAnswers[i - 1].explanation });
+      if (selectedAnswer.value === correctAnswers[i - 1].answer) {
+        score++;
+      }
+    } else {
+      studentAnswers.push({ question: i, selected: null, correct: correctAnswers[i - 1].answer, explanation: correctAnswers[i - 1].explanation });
+    }
+  }
+
+  const modal = document.getElementById('modal');
+  const scoreDisplay = document.getElementById('score');
+  const correctAnswersList = document.getElementById('correct-answers');
+
+  scoreDisplay.textContent = `Pontuação: ${score}/${correctAnswers.length}`;
+  correctAnswersList.innerHTML = '';
+
+  studentAnswers.forEach((answer, index) => {
+    const listItem = document.createElement('li');
+    listItem.innerHTML = `<strong>Questão ${answer.question}:</strong> Sua resposta: ${answer.selected || 'Não respondida'}<br>Resposta correta: ${answer.correct}<br>${answer.explanation}`;
+    correctAnswersList.appendChild(listItem);
+  });
+
+  modal.style.display = 'block';
+}
+
+function closeModal() {
+  const modal = document.getElementById('modal');
+  modal.style.display = 'none';
+}
+
+</script>
+
+</body>
+</html>
